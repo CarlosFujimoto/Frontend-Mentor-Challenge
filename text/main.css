@@ -5,9 +5,14 @@ body{
     margin: 0;
 }
 
+body, p, h1{
+    margin: 0;
+    font-size: 14px;
+}
+
 .container{
     align-items: center;
-    background-color: #ffe4c4;
+    background-color: #f2ebe3;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -17,4 +22,67 @@ body{
 
 .box-buy_product{
     background-color: #fff;
+    border-radius: 15px;
+    width: 375px;
+}
+
+.box-buy_product img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+    width: 375px;
+}
+
+.box-buy_text{
+    margin: 10px;
+}
+
+.box-buy_text h1{
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-size: 2.3em;
+    margin-inline: 25px;
+}
+
+.box-buy_text p{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    margin: 20px;
+}
+
+.box-buy__price{
+    align-items: center;
+    display: flex;
+}
+
+.box-buy__price h1{
+    color: hsl(158, 36%, 37%);
+    margin-right: 15px;
+}
+
+
+.box-buy__price > del{
+    color: hsl(228, 12%, 48%);
+    margin: -20px;
+}
+
+.btn_buy{
+    align-items: center;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.btn_buy a:link a:visited{
+    color: #fff;
+    text-decoration: none;
+    margin-inline: 10px;
 }
